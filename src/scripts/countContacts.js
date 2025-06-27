@@ -1,3 +1,8 @@
-export const countContacts = async () => {};
+const readContacts = require("../utils/readContacts");
 
-console.log(await countContacts());
+const countContacts = async () => {
+  const contacts = await readContacts();
+  console.log(`Кількість контактів: ${contacts.length}`);
+};
+
+countContacts();
