@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "goit-node-js",
   "version": "1.0.0",
   "description": "goit-node-js",

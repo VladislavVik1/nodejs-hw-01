@@ -1,6 +1,6 @@
-const createFakeContact = require("../utils/createFakeContact");
-const readContacts = require("../utils/readContacts");
-const writeContacts = require("../utils/writeContacts");
+import { createFakeContact } from '../utils/createFakeContact.js';
+import { readContacts } from '../utils/readContacts.js';
+import { writeContacts } from '../utils/writeContacts.js';
 
 const generateContacts = async (count = 5) => {
   const contacts = await readContacts();
@@ -8,4 +8,4 @@ const generateContacts = async (count = 5) => {
   await writeContacts([...contacts, ...newContacts]);
 };
 
-generateContacts(5); // Можна змінити кількість
+generateContacts();
